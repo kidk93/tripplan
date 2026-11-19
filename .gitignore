@@ -1,0 +1,4 @@
+*.tripvault
+*.tripdata
+*.tripsettings
+.DS_Store
