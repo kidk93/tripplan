@@ -1,5 +1,5 @@
 const PREFIX='fieldtrip-student-'+encodeURIComponent(self.registration.scope)+'-';
-const CACHE=PREFIX+'de4ce2040792';
+const CACHE=PREFIX+'dfbbc6ba2b6e';
 const FILES=['./','./index.html','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png','./apple-touch-icon.png'];
 const URLS=new Set(FILES.map(p=>new URL(p,self.registration.scope).href));
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES.map(p=>new Request(p,{cache:'reload'}))))));
